@@ -1,0 +1,18 @@
+﻿using She.Data.SharedKernel;
+using System.ComponentModel.DataAnnotations;
+
+namespace She.Data.Models
+{
+    public class SubCategory : BaseEntity
+    {
+        [Required(AllowEmptyStrings = false, ErrorMessage = "The field {0} is required")]
+        [MaxLength(30, ErrorMessage = "The field{0} must be maximum {1} characters length")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "The field {0} is required")]
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
+    }
+}
+
+

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="UsersServices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\She.Data\She.Data.csproj" />
+  </ItemGroup>
+
+</Project>
